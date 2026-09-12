@@ -1,0 +1,24 @@
+{
+  "name": "biotopo-agentic-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js demo for GitHub Agentic Workflows using a Biotopo del Quetzal PR review scenario.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "validate": "node tests/validate.js"
+  },
+  "dependencies": {
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.6.0",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "typescript": "5.9.3"
+  }
+}

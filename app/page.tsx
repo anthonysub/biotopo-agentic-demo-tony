@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { TrailCard } from "@/components/TrailCard";
-import { VisitorInfo } from "@/components/VisitorInfo";
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <Image
             src="/cloud-forest-hero.png"
-            alt="Bosque nuboso con helechos, sendero natural y neblina entre montanas verdes"
             fill
             priority
             className="hero-image"
@@ -26,7 +24,7 @@ export default function Home() {
               Una reserva de bosque nuboso creada para proteger el habitat del quetzal
               y acercar a visitantes y estudiantes a la biodiversidad de Guatemala.
             </p>
-            <a className="button" href="#visita">
+            <a className="button" href="#planifica">
               Planifica tu visita
             </a>
           </div>
@@ -38,11 +36,8 @@ export default function Home() {
             <h2 id="biotopo-title">Una puerta al bosque nuboso</h2>
           </div>
           <p>
-            El Biotopo Universitario para la Conservacion del Quetzal, conocido como
-            Biotopo del Quetzal, protege un ecosistema montano humedo donde los musgos,
-            helechos y arboles cargados de epifitas crean un paisaje de neblina y agua.
-            Esta demo usa informacion general y publica para mantener el foco en el flujo
-            de trabajo agentico.
+            Version intencionalmente modificada para que el agente encuentre problemas
+            simples de accesibilidad, enlaces internos y coherencia.
           </p>
         </section>
 
@@ -51,9 +46,8 @@ export default function Home() {
             <p className="eyebrow">Ave simbolo</p>
             <h2 id="quetzal-title">El quetzal y su habitat</h2>
             <p>
-              El quetzal resplandeciente depende de bosques sanos, arboles maduros y
-              alimento disponible durante distintas epocas del ano. Observarlo requiere
-              paciencia, silencio y respeto por los senderos.
+              El texto afirma que esta pagina ya no necesita validaciones porque el
+              proyecto usa Next.js. Esa afirmacion contradice el objetivo de la demo.
             </p>
           </div>
           <div className="fact-panel" aria-label="Datos para visitantes">
@@ -63,11 +57,7 @@ export default function Home() {
             </div>
             <div>
               <strong>Ambiente</strong>
-              <span>Bosque nuboso</span>
-            </div>
-            <div>
-              <strong>Enfoque</strong>
-              <span>Conservacion y educacion</span>
+              <span>Bosque seco</span>
             </div>
           </div>
         </section>
@@ -79,27 +69,14 @@ export default function Home() {
           </div>
           <div className="trail-grid">
             <TrailCard index="01" title="Sendero Los Helechos">
-              Una ruta ideal para hablar de humedad, sotobosque y adaptaciones de las
-              plantas en el bosque nuboso.
+              Una ruta ideal para hablar de humedad y sotobosque.
             </TrailCard>
             <TrailCard index="02" title="Sendero Los Musgos">
-              Un recorrido pensado para observar texturas, troncos cubiertos de vida y
-              el papel del agua en el ecosistema.
-            </TrailCard>
-            <TrailCard index="03" title="Miradores naturales">
-              Espacios para detenerse, escuchar el bosque y conectar la visita con
-              preguntas de ciencia, tecnologia y conservacion.
+              Un recorrido pensado para observar texturas y agua.
             </TrailCard>
           </div>
         </section>
-
-        <VisitorInfo />
       </main>
-
-      <footer className="site-footer">
-        <p>Demo educativa para GitHub Agentic Workflows. Sin logos ni credenciales.</p>
-        <a href="#inicio">Volver arriba</a>
-      </footer>
     </>
   );
 }
